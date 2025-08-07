@@ -1,0 +1,19 @@
+-- Products table
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    category TEXT NOT NULL,
+    quantity INTEGER NOT NULL,
+    price_per_quantity DECIMAL(10,2) NOT NULL,
+    description TEXT NOT NULL,
+    verified BOOLEAN DEFAULT true,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Site settings table
+CREATE TABLE site_settings (
+    id SERIAL PRIMARY KEY,
+    site_title TEXT DEFAULT 'Digital Services Store',
+    whatsapp_number TEXT DEFAULT '+2348020674070',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
