@@ -1,0 +1,16 @@
+src/
+├── app/
+│   ├── api/
+│   │   ├── utils/
+│   │   │   └── sql.js
+│   │   ├── products/
+│   │   │   ├── route.js
+│   │   │   └── [id]/
+│   │   │       └── route.js
+│   │   └── settings/
+│   │       └── route.js
+│   ├── admin/
+│   │   └── page.jsx
+│   ├── layout.jsx
+│   ├── page.jsx
+│   └── globals.css
